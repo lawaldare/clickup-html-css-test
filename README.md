@@ -7,7 +7,7 @@ This is the website of a data warehouse company
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/lawaldare/data-warehouse.git
+git clone https://github.com/lawaldare/clickup-html-css-test
 ```
 
 ### 2. Install NPM Packages
