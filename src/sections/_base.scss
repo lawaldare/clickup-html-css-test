@@ -9,14 +9,14 @@ $primary-font: "Helvetica", sans-serif;
 $secondary-font: "Avenir", sans-serif;
 
 // Media Query Variable
-$small: 30em; // 480px
-$small-1: 33.4em; // 534px
-$small-2: 37.5em; // 600px
-$medium: 47.5em; // 760px
-$medium-1: 53.75em; // 860px
-$medium-2: 60em; // 960px
-$medium-3: 67em; // 1072px
-$large: 72em; // 1152px
+$phone-small: 30em; // 480px
+$phone-large: 33.4em; // 534px
+$tab-small: 37.5em; // 600px
+$tab-medium: 47.5em; // 760px
+$tab-large: 53.75em; // 860px
+$desktop-small: 60em; // 960px
+$desktop-medium: 67em; // 1072px
+$desktop-large: 72em; // 1152px
 
 *,
 *::before,
@@ -24,7 +24,7 @@ $large: 72em; // 1152px
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 1rem => 10px;
   scroll-behavior: smooth;
 }
 body {
@@ -34,16 +34,16 @@ body {
   overflow-x: hidden;
   display: block !important;
 
-  @media only screen and (max-width: $large) {
+  @media only screen and (max-width: $desktop-large) {
     padding-top: 2rem;
     padding-left: 5rem;
     padding-right: 5rem;
   }
-  @media only screen and (max-width: $medium) {
+  @media only screen and (max-width: $tab-medium) {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  @media only screen and (max-width: $small) {
+  @media only screen and (max-width: $phone-small) {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -57,7 +57,7 @@ h1 {
   padding: 0;
   margin: 0;
 
-  @media only screen and (max-width: $small-1) {
+  @media only screen and (max-width: $phone-large) {
     font-size: 6rem;
     line-height: 6.6rem;
   }
@@ -118,7 +118,7 @@ a {
   }
 
   &__hide {
-    @media only screen and (max-width: $medium-1) {
+    @media only screen and (max-width: $tab-large) {
       display: none;
     }
   }
@@ -151,7 +151,7 @@ a {
   }
 
   &__mobile {
-    @media only screen and (max-width: $medium-1) {
+    @media only screen and (max-width: $tab-large) {
       display: block;
       margin-left: unset;
       margin-top: 2rem;
